@@ -1,11 +1,10 @@
 import classes from './MeetupDetails.module.css'
-
-import { Fragment } from "react";
+import Image from 'next/image';
 
 function MeetupDetail(props) {
   return (
     <section className={classes.details}>
-      <img
+      <Image
         scr={props.image}
         alt={props.title}
       />
